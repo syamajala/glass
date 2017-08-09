@@ -112,7 +112,7 @@ methods: {
     handleRowClick(row) {
         var plotDiv = document.getElementById('plot');
 
-        if (row == this.currentRow)
+        if (row == this.currentRow || (row != this.currentRow && this.currentRow != null))
         {
             this.currentRow = null;
             this.$refs.glassTable.setCurrentRow();
